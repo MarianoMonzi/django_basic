@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<h1>Buscador de Empleado/Cliente/Producto</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{form}}
+        
+        <button>
+            Buscar
+        </button>
+    </form>
+
+    <h1>{{ value }}</h1>
+
+<p>Tercera Entrega CoderHouse</p>
+{% endblock %}

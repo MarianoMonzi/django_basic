@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Productos</h1>
+
+{% for producto in productos %}
+
+<div>
+    <h1>{{producto.nombre}}</h1>
+    <h1>{{producto.valor}}</h1>
+    <h1><---------------------!></h1>
+</div>
+
+{% endfor %}
+{% endblock %}

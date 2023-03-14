@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Clientes</h1>
+
+{% for cliente in clientes %}
+
+<div>
+    <h1>{{cliente.nombre}}</h1>
+    <h1>{{cliente.apellido}}</h1>
+    <h1><---------------------!></h1>
+</div>
+
+{% endfor %}
+{% endblock %}
